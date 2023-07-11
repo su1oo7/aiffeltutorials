@@ -15,10 +15,7 @@
   > (numpy.ndarray, numpy.ndarray, (442, 10), (442,))
   > ```
 - [X] 코드가 에러를 유발할 가능성이 없나요?
-  > 호출 데이터의 양식이 변하면 오류가 발생할 가능성도 있습니다.
-  > ```
-  > df = load_diabetes()
-  > ```
+  > 런타임 시 오류가 발생하지 않을 것으로 예상 됩니다
 - [X] 코드 작성자가 코드를 제대로 이해하고 작성했나요?
   > 데이터 호출부터 분할 학습등 해당 데이터 분석에 맞는 순서로 작성하여 이해하고 작성하였다고 할 수 있습니다.
   > LEARNING_RATE = 0.5등 loss값을 줄이기 위해 인자값을 조절하였습니다.
@@ -41,35 +38,32 @@
   > 주석과 작성한 코드의 결과값을 바로 확인할 수 있게 작성하여 이해하기 쉬웠습니다.
   > ```
   >  # 각 항목의 세부 개수 확인
-  > train['year'].value_counts().plot.bar()
-  > plt.title('rental history per year')
-  > ```
+    train['year'].value_counts().plot.bar()
+    plt.title('rental history per year')
+    ```
 - [X] 코드가 에러를 유발할 가능성이 없나요?
-  > 파일 읽기 실패등을 위한 예외처리가 필요합니다.
-  > ```
-  > train = pd.read_csv('train.csv')
-  > ```
+  > 런타임 시 오류가 발생하지 않을 것으로 예상 됩니다
 - [X] 코드 작성자가 코드를 제대로 이해하고 작성했나요?
   > 데이터 호출부터 분할 학습등 해당 데이터 분석에 맞는 순서로 작성하여 이해하고 작성하였다고 할 수 있습니다.
   > RMSE 값을 줄이기 위해 필요없는 dtemp 컬럼 제거등을 하였습니다.
-  > ```
-  > del train['dtemp']
-  > ```
+    ```
+    del train['dtemp']
+    ```
 - [X] 코드가 간결한가요?
   > 작성한 코드별 시각화를 하여 간결하게 볼 수 있습니다.
   > ```
-  > wedgeprops={'width': 0.7, 'edgecolor': 'w', 'linewidth': 5}
+    wedgeprops={'width': 0.7, 'edgecolor': 'w', 'linewidth': 5}
     plt.pie(train['hour'].value_counts().sort_index(), labels = train['hour'].value_counts().sort_index().index,
             autopct = '%.1f%%',
             wedgeprops = wedgeprops )
     plt.show()  
-  > train[train.holiday==1].hour.value_counts().sort_index().plot.bar()
-  > train['dtemp'] = train['atemp'] - train['temp'] # 체감과 실제온도에 대한 값에 대한 차이 확인
+    train[train.holiday==1].hour.value_counts().sort_index().plot.bar()
+    train['dtemp'] = train['atemp'] - train['temp'] # 체감과 실제온도에 대한 값에 대한 차이 확인
     train['dtemp'].plot.hist(bins = 30)
     plt.show()
     train[train['dtemp']<0].shape
-  > sns.scatterplot(res, x ='true', y = 'pred')
-  > ```
+    sns.scatterplot(res, x ='true', y = 'pred')
+    ```
 
 
 # 참고 링크 및 코드 개선
