@@ -3,7 +3,7 @@
 - 리뷰어 : 최연석
 
 
-# PRT(PeerReviewTemplate) - Bike_Sharing_Demand_Prediction
+# PRT(PeerReviewTemplate) - Multiple_Linear_Regression_for_predicting_diabetes
 각 항목을 스스로 확인하고 토의하여 작성한 코드에 적용합니다.
 
 - [X] 코드가 정상적으로 동작하고 주어진 문제를 해결했나요?
@@ -32,7 +32,7 @@
   > ```
 
 
-# PRT(PeerReviewTemplate) - Multiple_Linear_Regression_for_predicting_diabetes
+# PRT(PeerReviewTemplate) - Bike_Sharing_Demand_Prediction
 각 항목을 스스로 확인하고 토의하여 작성한 코드에 적용합니다.
 
 - [X] 코드가 정상적으로 동작하고 주어진 문제를 해결했나요?
