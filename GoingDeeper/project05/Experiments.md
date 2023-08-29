@@ -12,7 +12,7 @@ quest는 ipynb 용량 문제로 루브릭에 근거해 해당 experiment에서 �
 |U-net(drop=False)|0.0|
 |U-net(drop=True)|0.638|
 |U-net++(deep_supervision=False)|**0.732**|
-|U-net++(deep_supervision=True)|실험중|
+|U-net++(deep_supervision=True)|0.0|
 
 *bold : hightest score
 
